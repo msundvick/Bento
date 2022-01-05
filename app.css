@@ -4,7 +4,7 @@
 // ╚═╝╚═╝╝╚╝ ╩ ╚═╝ 
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
 
 /* V A R I A B L E S */
 
@@ -41,8 +41,8 @@
   --fg: #d8dee9; /* Foreground color */
   --sfg: #3a3a3a; /* Secondary Foreground color */
   --imgcol: linear-gradient(
-    rgba(0, 0, 0, 0.85),
-    rgba(0, 0, 0, 0.85)
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.8)
   ); /* Filter color */
 }
 
@@ -52,7 +52,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   transition: 0.2s ease-in-out;
 }
 
@@ -66,11 +66,12 @@
 .withImageBackground {
   background-image: var(--imgcol), var(--imgbg);
   background-size: cover;
+  background-attachment: fixed;
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
+  width: 90vw;
+  /* height: 90vh; */
   background-color: var(--bg);
   display: flex;
   align-items: center;
@@ -93,12 +94,17 @@ body {
   height: 25px;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
 .container {
-  width: 145vh;
-  height: 85vh;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   grid-gap: 30px;
   padding: 20px;
 }
@@ -115,17 +121,6 @@ body {
 }
 
 .timeBlock {
-  grid-row: 1 / span 2;
-  grid-column: 1 / span 2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.weatherBlock {
-  grid-column: 3 / span 2;
-  grid-row: 1 / span 2;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -164,9 +159,6 @@ body {
   font-size: var(--fsm);
   font-weight: bold;
   color: var(--fg);
-}
-
-#day {
   margin-left: 20px;
 }
 
@@ -175,39 +167,21 @@ body {
   color: var(--fg);
 }
 
-.weatherIcon img {
-  width: 70px;
-  height: 70px;
-}
-
-.weatherValue p {
-  font-size: var(--fss);
-  font-weight: bolder;
-  margin-left: 15px;
-  color: var(--fg);
-}
-
-.weatherDescription p {
-  font-size: var(--fss);
-  margin-left: 15px;
-  color: var(--fg);
-}
-
 .buttons {
-  grid-row: 3 / span 2;
-  grid-column: 1 / span 2;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
   grid-gap: 30px;
   padding: 20px;
+  width: fit-content;
 }
 
 .buttons__link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 70px;
+  height: 70px;
 }
 
 .buttonLink__icon {
@@ -216,30 +190,6 @@ body {
   color: var(--fg);
 }
 
-.buttons__link-1 {
-  grid-row: 1;
-  grid-column: 1;
-}
-.buttons__link-2 {
-  grid-row: 1;
-  grid-column: 2;
-}
-.buttons__link-3 {
-  grid-row: 2;
-  grid-column: 1;
-}
-.buttons__link-4 {
-  grid-row: 2;
-  grid-column: 2;
-}
-.buttons__link-5 {
-  grid-row: 1;
-  grid-column: 3;
-}
-.buttons__link-6 {
-  grid-row: 2;
-  grid-column: 3;
-}
 .buttons__link:hover {
   background-color: var(--accent);
 }
@@ -251,16 +201,9 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
+  width: fit-content;
 }
 
-.list__1 {
-  grid-column: 3;
-  grid-row: 3 / span 2;
-}
-.list__2 {
-  grid-column: 4;
-  grid-row: 3 / span 2;
-}
 .list__head {
   margin-top: 3vh;
   margin-bottom: 2vh;
@@ -277,45 +220,9 @@ body {
   border-radius: 5px;
   font-weight: bold;
   text-align: center;
-  width: 80%;
+  width: 100%;
 }
 .list__link:hover {
   background-color: var(--accent);
   color: var(--sfg);
-}
-
-/* M E D I A - Q U E R I E S */
-
-@media only screen and (max-width: 68.75em) {
-  .container {
-    grid-gap: 20px;
-    padding: 40px;
-  }
-
-  .timeBlock {
-    grid-row: 1 / span 2;
-    grid-column: 1 / span 4;
-  }
-
-  .weatherBlock {
-    display: none;
-  }
-
-  #greetings {
-    font-size: var(--fss);
-  }
-
-  .list {
-    display: none;
-  }
-
-  .buttons {
-    grid-column: 1 / span 4;
-  }
-
-  .buttonLink {
-    grid-gap: 3vw;
-    padding-left: 100px;
-    padding-right: 100px;
-  }
 }

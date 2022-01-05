@@ -18,40 +18,21 @@
       ╚═╝╚═╝╝╚╝ ╩ ╚═╝
       -->
 
-  <body class="">
+  <body class="main">
     <button id="themeButton">
       <i id="themeIcon" icon-name="moon"></i>
     </button>
     <div class="container">
       <!-- Clock and Greetings  -->
-
       <div class="timeBlock">
         <div class="clock">
           <div id="hour" class=""></div>
           <div id="separator" class=""></div>
           <div id="minutes" class=""></div>
-        </div>
-        <div id="greetings" class=""></div>
-      </div>
-
-      <!-- Date and Weather  -->
-
-      <div class="weatherBlock">
-        <div class="date">
           <div id="month" class=""></div>
           <div id="day" class=""></div>
         </div>
-        <div class="weather">
-          <div class="weatherIcon">
-            <img src="assets/icons/OneDark/unknown.png" />
-          </div>
-          <div class="weatherValue">
-            <p class="">- °<span class="g">c</span></p>
-          </div>
-          <div class="weatherDescription">
-            <p class=""></p>
-          </div>
-        </div>
+        <div id="greetings" class=""></div>
       </div>
 
       <!-- 
@@ -61,16 +42,22 @@
         -->
 
       <div class="buttons" id="buttonsContainer"></div>
+    </div>
 
-      <!-- 
-        ┬  ┬┌─┐┌┬┐┌─┐
-        │  │└─┐ │ └─┐
-        ┴─┘┴└─┘ ┴ └─┘
-        -->
-
-      <div class="card list list__1" id="list_1"></div>
-
-      <div class="card list list__2" id="list_2"></div>
+    <!-- 
+      ┬  ┬┌─┐┌┬┐┌─┐
+      │  │└─┐ │ └─┐
+      ┴─┘┴└─┘ ┴ └─┘
+      -->
+    <div class="container" id="list_container">
+      <iframe
+        id="weather_widget_iframe"
+        width="300px"
+        height="195px"
+        src="https://services.metservice.com/weather-widget/widget?params=white|medium|portrait|days-3|modern&loc=warkworth&type=rural"
+        allowtransparency="true"
+        style="border: none"
+      ></iframe>
     </div>
 
     <!-- Config  -->
@@ -80,11 +67,10 @@
     <script src="assets/js/time.js"></script>
     <script src="assets/js/theme.js"></script>
     <script src="assets/js/greeting.js"></script>
-    <script src="assets/js/weather.js"></script>
 
     <script src="assets/js/cards.js"></script>
     <script src="assets/js/lists.js"></script>
-    <script>
+    <script defer>
       lucide.createIcons();
     </script>
   </body>
