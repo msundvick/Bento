@@ -103,7 +103,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   grid-gap: 30px;
   padding: 20px;
@@ -202,6 +202,7 @@ body {
   align-items: center;
   flex-direction: column;
   width: fit-content;
+  min-width: 50px;
 }
 
 .list__head {

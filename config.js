@@ -13,13 +13,13 @@ const CONFIG = {
   // General
   name: "Michael",
   imageBackground: true,
-  openInNewTab: true,
+  openInNewTab: false,
   twelveHourFormat: false,
 
   // Greetings
   greetingMorning: "Good morning",
-  greetingAfternoon: "Good afternoon,",
-  greetingEvening: "Good evening,",
+  greetingAfternoon: "Good afternoon",
+  greetingEvening: "Good evening",
   greetingNight: "Go to sleep",
 
   // ┌─┐┌─┐┬─┐┌┬┐┌─┐
@@ -36,12 +36,7 @@ const CONFIG = {
     {
       name: "Mail",
       icon: "mail",
-      link: "https://mail.protonmail.com/",
-    },
-    {
-      name: "Todoist",
-      icon: "trello",
-      link: "https://todoist.com",
+      link: "https://gmail.com/",
     },
     {
       name: "Calendar",
@@ -49,53 +44,110 @@ const CONFIG = {
       link: "https://calendar.google.com/calendar/r",
     },
     {
-      name: "Reddit",
-      icon: "glasses",
-      link: "https://reddit.com",
+      name: "Todoist",
+      icon: "trello",
+      link: "https://todoist.com",
     },
     {
-      name: "Odysee",
+      name: "Reddit",
+      icon: "glasses",
+      link: "https://news.ycombinator.com",
+    },
+    {
+      name: "Youtube",
       icon: "youtube",
-      link: "https://odysee.com/",
+      link: "https://youtube.com/",
     },
   ],
 
   // Links
   lists: {
-    music: [
+    search: [
       {
-        name: "Inspirational",
-        link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        name: "Google",
+        link: "https://google.com",
       },
       {
-        name: "Classic",
-        link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        name: "Duck",
+        link: "https://duckduckgo.com",
       },
       {
-        name: "Oldies",
-        link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-      },
-      {
-        name: "Rock",
-        link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        name: "Million Short",
+        link: "https://millionshort.com/",
       },
     ],
-    coffee: [
+    feather: [
       {
-        name: "Linkedin",
-        link: "https://linkedin.com/",
+        name: "BASE",
+        link: "https://www.base-search.net",
       },
       {
-        name: "Figma",
-        link: "https://figma.com/",
+        name: "Semantic Scholar",
+        link: "https://www.semanticscholar.org/",
       },
       {
-        name: "Dribbble",
-        link: "https://dribbble.com",
+        name: "Google Scholar",
+        link: "https://scholar.google.com/",
       },
       {
-        name: "Telegram",
-        link: "https://webk.telegram.org",
+        name: "Research Gate",
+        link: "https://www.researchgate.net/",
+      },
+    ],
+    "file-text": [
+      {
+        name: "RNZ",
+        link: "https://rnz.co.nz",
+      },
+      {
+        name: "Spinoff",
+        link: "https://thespinoff.co.nz/",
+      },
+    ],
+    terminal: [
+      {
+        name: "LWN",
+        link: "https://lwn.net/",
+      },
+      {
+        name: "Phoronix",
+        link: "https://www.phoronix.com/scan.php?page=home",
+      },
+      {
+        name: "Julia - Zulip",
+        link: "https://julialang.zulipchat.com/",
+      },
+      {
+        name: "Julia - Issues",
+        link: "https://github.com/JuliaLang/julia/issues?q=sort%3Aupdated-desc+",
+      },
+      {
+        name: "HPC",
+        link: "https://www.hpcwire.com/",
+      },
+    ],
+    "book-open": [
+      {
+        name: "RoyalRoad",
+        link: "https://www.royalroad.com/my/follows",
+      },
+      {
+        name: "Webtoon",
+        link: "https://www.webtoons.com/en/",
+      },
+      {
+        name: "Goodreads",
+        link: "https://www.goodreads.com/",
+      },
+    ],
+    film: [
+      {
+        name: "TVNZ",
+        link: "https://www.tvnz.co.nz",
+      },
+      {
+        name: "Spark Sport",
+        link: "https://www.sparksport.co.nz/",
       },
     ],
   },
