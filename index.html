@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width" charset="UTF-8" />
+    <title>Bento</title>
+    <link
+      rel=" shortcut icon"
+      type="image/png"
+      href="/assets/favicon.336483cb.png"
+    />
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script type="module" crossorigin src="/assets/index.8a6024f7.js"></script>
+    <link rel="stylesheet" href="/assets/index.8895ab71.css">
+  </head>
+
+  <!-- 
+      ╔╗ ╔═╗╔╗╔╔╦╗╔═╗
+      ╠╩╗║╣ ║║║ ║ ║ ║
+      ╚═╝╚═╝╝╚╝ ╩ ╚═╝
+      -->
+
+  <body class="main">
+    <button name="dark theme switcher" id="themeButton" type="button">
+      <i id="themeIcon" icon-name="moon"></i>
+    </button>
+    <div class="container">
+      <!-- Clock and Greetings  -->
+      <div class="timeBlock">
+        <div class="clock">
+          <div id="hour" class=""></div>
+          <div id="separator" class=""></div>
+          <div id="minutes" class=""></div>
+          <div id="month" class=""></div>
+          <div id="day" class=""></div>
+        </div>
+        <div id="greetings" class=""></div>
+      </div>
+
+      <!-- 
+        ┌┐ ┬ ┬┌┬┐┌┬┐┌─┐┌┐┌┌─┐
+        ├┴┐│ │ │  │ │ ││││└─┐
+        └─┘└─┘ ┴  ┴ └─┘┘└┘└─┘ 
+        -->
+
+      <div class="buttons" id="buttonsContainer"></div>
+    </div>
+
+    <!-- 
+      ┬  ┬┌─┐┌┬┐┌─┐
+      │  │└─┐ │ └─┐
+      ┴─┘┴└─┘ ┴ └─┘
+      -->
+    <div class="container" id="list_container">
+      <iframe
+        title="metservice weather widget"
+        name="metservice weather widget"
+        id="weather_widget_iframe"
+        width="300px"
+        height="195px"
+        src="https://services.metservice.com/weather-widget/widget?params=white|medium|portrait|days-3|modern&loc=warkworth&type=rural"
+        allowtransparency="true"
+        style="border: none"
+      ></iframe>
+    </div>
+
+    <!-- Config  -->
+    <!-- <script src="config.js"></script> -->
+
+    <!-- Scripts  -->
+    
+    <!-- <script src="https://cdn.jsdelivr.net/npm/hiccupfx@1.1.1/hiccupfx-min.js"></script> -->
+  </body>
+
+  <!-- Developed and designed by Miguel R. Ávila: -->
+  <!-- https://github.com/migueravila -->
+</html>
