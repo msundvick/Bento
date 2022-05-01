@@ -6,8 +6,6 @@ export default ({ mode }) => {
   process.env = { ...process.env, ...loadEnv(mode, process.cwd()) };
 
   return defineConfig({
-    // To access env vars here use process.env.TEST_VAR
-    build: { target: process.env.NO_MODULES ? "es2015" : "modules" },
-    plugins: [],
+    base: "./",
   });
 };
