@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" charset="UTF-8" />
     <title>Bento</title>
     <link
       rel=" shortcut icon"
       type="image/png"
-      href="assets/icons/favicon.png"
+      href="./assets/icons/favicon.png"
     />
-    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="./app.css" />
     <script src="https://unpkg.com/lucide@latest"></script>
   </head>
 
@@ -19,7 +19,7 @@
       -->
 
   <body class="main">
-    <button id="themeButton">
+    <button name="dark theme switcher" id="themeButton" type="button">
       <i id="themeIcon" icon-name="moon"></i>
     </button>
     <div class="container">
@@ -51,6 +51,8 @@
       -->
     <div class="container" id="list_container">
       <iframe
+        title="metservice weather widget"
+        name="metservice weather widget"
         id="weather_widget_iframe"
         width="300px"
         height="195px"
@@ -61,18 +63,11 @@
     </div>
 
     <!-- Config  -->
-    <script src="config.js"></script>
+    <!-- <script src="config.js"></script> -->
 
     <!-- Scripts  -->
-    <script src="assets/js/time.js"></script>
-    <script src="assets/js/theme.js"></script>
-    <script src="assets/js/greeting.js"></script>
-
-    <script src="assets/js/cards.js"></script>
-    <script src="assets/js/lists.js"></script>
-    <script defer="true">
-      lucide.createIcons();
-    </script>
+    <script crossorigin type="module" src="./src/main.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/hiccupfx@1.1.1/hiccupfx-min.js"></script> -->
   </body>
 
   <!-- Developed and designed by Miguel R. Ávila: -->

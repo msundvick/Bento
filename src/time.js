@@ -1,6 +1,7 @@
 // ┌┬┐┬┌┬┐┌─┐
 //  │ ││││├┤
 //  ┴ ┴┴ ┴└─┘
+import { CONFIG } from "./config";
 
 window.onload = displayClock();
 // Clock function

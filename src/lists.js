@@ -1,6 +1,7 @@
 // ┬  ┬┌─┐┌┬┐┌─┐
 // │  │└─┐ │ └─┐
 // ┴─┘┴└─┘ ┴ └─┘
+import { CONFIG } from "./config";
 
 const all_lists = () => {
   const position = "beforeend";
@@ -13,6 +14,7 @@ const all_lists = () => {
       // List item
       items += `
           <a
+          title="list item ${link.link}"
           target="${CONFIG.openInNewTab ? "_blank" : ""}"
           href="${link.link}"
           class="list__link"
@@ -20,7 +22,9 @@ const all_lists = () => {
           >
       `;
     }
-    list_container.insertAdjacentHTML(position, div + icon + items + "</div>");
+    document
+      .getElementById("list_container")
+      .insertAdjacentHTML(position, div + icon + items + "</div>");
   }
 };
 

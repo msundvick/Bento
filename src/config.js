@@ -5,7 +5,7 @@
 // │  │ ││││├┤ ││ ┬│ │├┬┘├─┤ │ ││ ││││
 // └─┘└─┘┘└┘└  ┴└─┘└─┘┴└─┴ ┴ ┴ ┴└─┘┘└┘
 
-const CONFIG = {
+export const CONFIG = {
   // ┌┐ ┌─┐┌─┐┬┌─┐┌─┐
   // ├┴┐├─┤└─┐││  └─┐
   // └─┘┴ ┴└─┘┴└─┘└─┘
@@ -46,7 +46,7 @@ const CONFIG = {
     {
       name: "Todoist",
       icon: "trello",
-      link: "https://todoist.com",
+      link: "https://github.com/users/msundvick/projects/1",
     },
     {
       name: "Reddit",

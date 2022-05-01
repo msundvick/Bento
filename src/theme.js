@@ -1,31 +1,37 @@
 // ┌┬┐┬ ┬┌─┐┌┬┐┌─┐
 //  │ ├─┤├┤ │││├┤
 //  ┴ ┴ ┴└─┘┴ ┴└─┘
+import { CONFIG } from "./config";
+const lucide = window.lucide;
 
 // Store the theme
 let darkTheme = localStorage.getItem("darkTheme");
 const themeToggle = document.querySelector("#themeButton");
-const bodyBackground = document.getElementById("#body");
+// const bodyBackground = document.getElementById("#body");
 
 // Apply Dark theme
 const enableDark = () => {
-  weather_widget_iframe.setAttribute(
-    "src",
-    "https://services.metservice.com/weather-widget/widget?params=blue|medium|portrait|days-3|modern&loc=warkworth&type=rural"
-  );
+  document
+    .getElementById("weather_widget_iframe")
+    .setAttribute(
+      "src",
+      "https://services.metservice.com/weather-widget/widget?params=blue|medium|portrait|days-3|modern&loc=warkworth&type=rural"
+    );
   document.body.classList.add("darktheme");
   localStorage.setItem("darkTheme", "enabled");
-  themeToggle.innerHTML = `<i id="themeButton__icon" icon-name="sun"></i>`;
+  themeToggle.innerHTML = '<i id="themeButton__icon" icon-name="sun"></i>';
   lucide.createIcons();
 };
 
 // Remove Dark theme
 const disableDark = () => {
   document.body.classList.remove("darktheme");
-  weather_widget_iframe.setAttribute(
-    "src",
-    "https://services.metservice.com/weather-widget/widget?params=white|medium|portrait|days-3|modern&loc=warkworth&type=rural"
-  );
+  document
+    .getElementById("weather_widget_iframe")
+    .setAttribute(
+      "src",
+      "https://services.metservice.com/weather-widget/widget?params=white|medium|portrait|days-3|modern&loc=warkworth&type=rural"
+    );
   localStorage.setItem("darkTheme", null);
   themeToggle.innerHTML = `<i id="themeButton__icon" icon-name="moon"></i>`;
   lucide.createIcons();
