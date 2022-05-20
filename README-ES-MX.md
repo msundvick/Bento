@@ -1,6 +1,5 @@
 ![image](assets/img/header.png)
 
-
 <p style="margin: -20px 0 30px">
   <a href="https://www.buymeacoffee.com/migueravila" target="_blank" style='margin-right:0px; margin-top:5px'>
     <img align="center" src="https://github.com/migueravila/Bento/blob/master/assets/img/donation.png" alt="donation" height="35px" />
@@ -14,18 +13,18 @@
 <br />
 
 ## 👇 Índice
+
 - [👇 Índice](#-indice)
 - [✨ Características](#-caracteistícas)
 - [🚀 Usos](#-usos)
-    - [Como página de inicio](#como-página-de-inicio)
-    - [Como una nueva pestaña](#como-una-nueva-pestaña)
+  - [Como página de inicio](#como-página-de-inicio)
+  - [Como una nueva pestaña](#como-una-nueva-pestaña)
 - [🎨 Personalización](#-personalización)
   - [👋 General: Nombre, Imagen De Fondo y Saludos](#-nombre-imagen-de-fondo-y-saludos)
   - [🏷️ Botones de enlace](#️-enlaces-de-botones)
   - [📑 Lista de enlaces](#-lista-de-enlaces)
   - [⛈️ Clima: Clave De La Api, Iconos y Grupos](#️-Clima-clave-de-la-api-iconos-y-grupos)
   - [💛 Colores](#-colores)
-
 
 ## ✨ Características
 
@@ -81,7 +80,7 @@ Para cambiar el nombre por defecto, los saludos y si deseas tener una imagen de 
 
 ![](assets/img/previewbg.png)
 
-### 🏷️ Botones de Enlace****
+### 🏷️ Botones de Enlace\*\*\*\*
 
 Para editar los botones solo tienes que cambiar la siguiente lista en el archivo `config.js` eligiendo un enlace, un icono proveniente de [Feather Icons](https://feathericons.com/) y un nombre:
 
@@ -178,7 +177,7 @@ Lo mismo pasa con la lista de enlaces, puedes cambiar la lista de iconos (tambi�
 
 ### ⛈️ Clima: Clave De La Api, Iconos y Grupos
 
-Para configurar el widget del clima necesitaras una clave de API proveniente de: `https://openweathermap.org/`. Una vez que hayas obtenido tu clave, necesitaras configurar tu latitud y longitud, para ello puedes usar: `https://www.latlong.net/` para obtenerlas. 
+Para configurar el widget del clima necesitaras una clave de API proveniente de: `https://openweathermap.org/`. Una vez que hayas obtenido tu clave, necesitaras configurar tu latitud y longitud, para ello puedes usar: `https://www.latlong.net/` para obtenerlas.
 
 Finalmente, escoge un set de iconos:
 

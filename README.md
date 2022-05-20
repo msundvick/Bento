@@ -1,6 +1,5 @@
 ![image](assets/img/header.png)
 
-
 <p style="margin: -20px 0 30px">
   <a href="https://www.buymeacoffee.com/migueravila" target="_blank" style='margin-right:0px; margin-top:5px'>
     <img align="center" src="https://github.com/migueravila/Bento/blob/master/assets/img/donation.png" alt="donation" height="35px" />
@@ -8,7 +7,7 @@
 
   <a href="https://migueravila.github.io/Bento/" target="_blank" style='margin-right:0px; margin-top:5px'>
     <img align="center" src="https://github.com/migueravila/Bento/blob/master/assets/img/live.png" alt="live-preview" height="35px" />
-  </a> 
+  </a>
 
   <a href="https://github.com/migueravila/Bento/blob/master/README-ES-MX.md" target="_blank" style='margin-right:0px; margin-top:5px'>
     <img align="center" src="https://github.com/migueravila/Bento/blob/master/assets/img/spanish.png" alt="live-preview" height="35px" />
@@ -18,18 +17,18 @@
 <br />
 
 ## 👇 Index
+
 - [👇 Index](#-index)
 - [✨ Features](#-features)
 - [🚀 Usage](#-usage)
-    - [As Home Page](#as-home-page)
-    - [As New Tab](#as-new-tab)
+  - [As Home Page](#as-home-page)
+  - [As New Tab](#as-new-tab)
 - [🎨 Customization](#-customization)
   - [👋 General: Name, Image Background and Greetings](#-general-name-image-background-and-greetings)
   - [🏷️ Button Links](#️-button-links)
   - [📑 List Links](#-list-links)
   - [⛈️ Weather: Api Key, Icons and Unit](#️-weather-api-key-icons-and-unit)
   - [💛 Colors](#-colors)
-
 
 ## ✨ Features
 
@@ -182,7 +181,7 @@ The same happens with the list links, you can change the list icon (also using f
 
 ### ⛈️ Weather: Api Key, Icons and Unit
 
-For setting up the Weather widget you'll need an API Key from: `https://openweathermap.org/`. Once you have your Key you'll need to set your latitude and longitude, you can use: `https://www.latlong.net/` to get them. 
+For setting up the Weather widget you'll need an API Key from: `https://openweathermap.org/`. Once you have your Key you'll need to set your latitude and longitude, you can use: `https://www.latlong.net/` to get them.
 
 Finally, choose an Icon set:
 

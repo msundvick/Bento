@@ -1,4 +1,5 @@
 /*eslint-env node */
+/// <reference types="vitest" />
 import { defineConfig, loadEnv } from "vite";
 
 export default ({ mode }) => {
@@ -7,5 +8,6 @@ export default ({ mode }) => {
 
   return defineConfig({
     base: "./",
+    test: {},
   });
 };
