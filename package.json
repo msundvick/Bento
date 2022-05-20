@@ -18,10 +18,9 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-html": "^6.2.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "jshint": "^2.13.4",
     "prettier": "^2.6.2",
     "tsc": "^2.0.4",
-    "vite": "^2.9.5"
-  },
-  "dependencies": {}
+    "vite": "^2.9.5",
+    "vitest": "^0.12.7"
+  }
 }

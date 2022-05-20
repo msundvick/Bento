@@ -10,12 +10,12 @@
 
 :root {
   /* Fonts  */
-  --fsg: 12vh; /* Time and Greetings */
-  --fsm: 8vh; /* Date */
-  --fss: 3vh; /* Greetings and Weather widger */
-  --fses: 2vh; /* Links List */
+  --fsg: 6em; /* Time and Greetings */
+  --fsm: 4em; /* Date */
+  --fss: 1.5em; /* Greetings and Weather widger */
+  --fses: 1em; /* Links List */
 
-  --iconsize: 3vh;
+  --iconsize: 2em;
 
   /* Light theme  */
   --accent: #61b0f1; /* Hover color */
@@ -100,6 +100,7 @@ body {
 }
 
 .container {
+  max-width: 100vw;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -144,11 +145,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 #hour,
 #separator,
 #minutes {
+  word-wrap: break-word;
   font-size: var(--fsg);
   font-weight: bolder;
   color: var(--fg);
