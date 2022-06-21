@@ -4,5 +4,5 @@ import {} from "./lists";
 import {} from "./theme";
 import {} from "./time";
 
-const lucide = window.lucide;
-lucide.createIcons();
+import { createIcons, icons } from "lucide";
+createIcons({ icons });

@@ -2,7 +2,7 @@
 //  │ ├─┤├┤ │││├┤
 //  ┴ ┴ ┴└─┘┴ ┴└─┘
 import { CONFIG } from "./config";
-const lucide = window.lucide;
+import { createIcons, icons } from "lucide";
 
 // Store the theme
 let darkTheme = localStorage.getItem("darkTheme");
@@ -20,7 +20,7 @@ const enableDark = () => {
   document.body.classList.add("darktheme");
   localStorage.setItem("darkTheme", "enabled");
   themeToggle.innerHTML = '<i id="themeButton__icon" icon-name="sun"></i>';
-  lucide.createIcons();
+  createIcons({ icons });
 };
 
 // Remove Dark theme
@@ -34,7 +34,7 @@ const disableDark = () => {
     );
   localStorage.setItem("darkTheme", null);
   themeToggle.innerHTML = `<i id="themeButton__icon" icon-name="moon"></i>`;
-  lucide.createIcons();
+  createIcons({ icons });
 };
 
 //Toggle theme
