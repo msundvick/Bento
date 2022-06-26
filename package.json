@@ -24,6 +24,7 @@
     "vitest": "^0.12.7"
   },
   "dependencies": {
-    "lucide": "^0.68.0"
+    "lucide": "^0.68.0",
+    "vite-plugin-pwa": "^0.12.0"
   }
 }
